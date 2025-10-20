@@ -48,5 +48,4 @@ Permanently discharge bots (deletes from backend)
 
 ---
 
-Would you like me to generate the initial React app files (`App.js`, `BotColle
 

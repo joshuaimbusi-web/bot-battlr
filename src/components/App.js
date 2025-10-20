@@ -1,4 +1,3 @@
-// App.js
 import React, { useEffect, useState } from "react";
 import BotCollection from "./BotCollection";
 import YourBotArmy from "./YourBotArmy";
