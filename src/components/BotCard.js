@@ -8,14 +8,7 @@ function BotCard({ bot, onClick, onDischarge }) {
       <p>{bot.bot_class}</p>
       <p>Health {bot.health} | Damage {bot.damage} | Armor{bot.armor}</p>
       {onDischarge && (
-        <button 
-          className="delete-btn" 
-          onClick={(e) => { 
-            e.stopPropagation(); 
-            onDischarge(bot); 
-          }}
-        >
-          Discharge
+        <button className="delete-btn" onClick={(e) => {  e.stopPropagation();  onDischarge(bot);  }}>Discharge
         </button>
       )}
     </div>
