@@ -7,7 +7,7 @@ function BotSpecs({ bot, onBack, onEnlist }) {
       <h2>{bot.name}</h2>
       <p><strong>Class:</strong> {bot.bot_class}</p>
       <p><strong>Catchphrase:</strong> {bot.catchphrase}</p>
-      <p>❤️ {bot.health} | ⚔️ {bot.damage} | 🛡 {bot.armor}</p>
+      <p>Health {bot.health} | Damage {bot.damage} | Armor {bot.armor}</p>
 
       <div className="buttons">
         <button onClick={onBack}>Back to Collection</button>

@@ -12,7 +12,7 @@ function App() {
   const [filters, setFilters] = useState([]); 
 
   useEffect(() => {
-    fetch("http://localhost:8001/bots")
+    fetch("http://localhost:3000/bots")
       .then(res => res.json())
       .then(data => setBots(data));
   }, []);
@@ -43,7 +43,7 @@ function App() {
   }
 
   function handleDischarge(bot) {
-    fetch(`http://localhost:8001/bots/${bot.id}`, { method: "DELETE" })
+    fetch(`http://localhost:3000/bots/${bot.id}`, { method: "DELETE" })
       .then(() => {
         setArmy(army.filter(b => b.id !== bot.id));
         setBots(bots.filter(b => b.id !== bot.id));
@@ -61,7 +61,7 @@ function App() {
 
   return (
     <div>
-      <h1>🤖 Bot Battlr</h1>
+      <h1> Bot Battlr</h1>
 
       <YourBotArmy 
         army={army} 

@@ -6,7 +6,7 @@ function BotCard({ bot, onClick, onDischarge }) {
       <img src={bot.avatar_url} alt={bot.name} />
       <h3>{bot.name}</h3>
       <p>{bot.bot_class}</p>
-      <p>❤️ {bot.health} | ⚔️ {bot.damage} | 🛡 {bot.armor}</p>
+      <p>Health {bot.health} | Damage {bot.damage} | Armor{bot.armor}</p>
       {onDischarge && (
         <button 
           className="delete-btn" 
@@ -15,7 +15,7 @@ function BotCard({ bot, onClick, onDischarge }) {
             onDischarge(bot); 
           }}
         >
-          ❌
+          Discharge
         </button>
       )}
     </div>
